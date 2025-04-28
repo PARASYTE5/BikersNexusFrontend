@@ -1,0 +1,26 @@
+.hero-section {
+    margin-top: 97px;
+    position: relative;
+    height: 730px;
+    background: url(".\Images\GnM_Hero.webp") no-repeat center center/cover;
+  }
+  
+  .overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+  }
+  .lead{
+    color: aliceblue;
+  }
+  .content {
+    z-index: 1;
+    padding-top: 140px;
+  }
+  .button-submit{
+    margin-right: 10px;
+  }
+  

@@ -1,0 +1,128 @@
+/* Prevent horizontal scrolling */
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+/* Features Section Styling */
+.features-section {
+  padding: 3rem 0; /* Top and bottom padding */
+  box-sizing: border-box; /* Add right margin to the whole section */
+  margin-top: 10px;
+  background-color: #E2E2D2;
+}
+
+/* Features Section Heading */
+.features-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Container for Feature Cards */
+.feature-container {
+  display: flex;
+  justify-content: space-between; /* Ensures space between the cards */
+  gap: 1.5rem; /* Adds gap between cards */
+  flex-wrap: wrap; /* Ensures responsiveness */
+  margin-left: auto; /* Align container to the center */
+  margin-right: auto; /* Align container to the center */
+  max-width: 90%; /* Ensures no horizontal overflow */
+  background-color: #E2E2D2;
+}
+
+/* Feature Box Styling */
+.feature-box {
+  text-align: center;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  position: relative; /* For overlay effect */
+  padding-top: 15px;
+  overflow: hidden; /* Prevent text overflow */
+  flex: 1; /* Allow the boxes to grow */
+  max-width: 22%; /* Prevent stretching beyond this width */
+  min-width: 240px; /* Ensures responsive cards */
+  margin: 0 1rem; /* Add margin on the left and right of each card */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  background-color: #98141c;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 40px;
+}
+
+/* Hover Effect on Feature Box */
+.feature-box:hover {
+  transform: translateY(-10px); /* Slight lift on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  background-color: #ceb64a; /* Light background color on hover */
+}
+
+/* Icons inside the feature-box */
+.feature-box i {
+  background-color: #000000; /* Background to icons */
+  padding: 15px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 2rem;
+  transition: background-color 0.3s ease; /* Smooth transition for icon hover */
+}
+
+/* Hover Effect on Icon */
+.feature-box:hover i {
+  background-color: #000000; /* Darken icon background on hover */
+}
+
+/* Title inside feature-box */
+.feature-box h3, .feature-box h6 {
+  color: white; /* Initially white */
+  transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Hover Effect - Change to black */
+.feature-box:hover h3, 
+.feature-box:hover h6 {
+  color: black;
+}
+
+/* Overlay effect */
+.feature-box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2); /* Darken effect */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1; /* Place overlay behind content */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .features-section h2 {
+    font-size: 2rem;
+  }
+
+  .feature-container {
+    flex-direction: column; /* Stack cards vertically on small screens */
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .feature-box {
+    margin-bottom: 1.5rem;
+    padding-left: 10px; /* Ensure padding for smaller screens */
+    padding-right: 10px; /* Ensure padding for smaller screens */
+    flex: none; /* Ensure cards do not stretch */
+  }
+
+  .feature-box h3 {
+    font-size: 1.5rem;
+  }
+
+  .feature-box h6 {
+    font-size: 0.95rem;
+  }
+}

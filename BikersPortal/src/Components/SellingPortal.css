@@ -1,0 +1,41 @@
+/* Category Menu Styling */
+.category-menu {
+    background-color: black;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 108px;
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping */
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Category Links */
+.category-menu a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0 7px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    white-space: nowrap;
+}
+
+/* Hover Effect */
+.category-menu a:hover {
+    color: #ffbf10;
+}
+
+/* Move "New In" to a new row on small screens */
+@media (max-width: 600px) {
+    .new-in {
+        width: 100%;  /* Forces "New In" to move down */
+        text-align: center;
+    }
+    
+        .category-menu{
+            margin-top: 130px;
+        }
+    
+}

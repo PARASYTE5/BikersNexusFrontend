@@ -1,0 +1,40 @@
+/* Cart item container */
+.cart-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  /* Product image */
+  .cart-item-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  /* Product title */
+  .cart-item-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  /* Price */
+  .cart-item-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #B12704;
+  }
+  
+  /* Quantity buttons */
+  .btn-light {
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+  }
+  
+  /* Delete button */
+  .btn-danger {
+    font-size: 0.9rem;
+  }
+  

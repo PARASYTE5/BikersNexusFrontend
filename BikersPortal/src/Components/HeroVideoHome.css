@@ -1,0 +1,20 @@
+
+   
+   /* Add extra margin when the page size is small */
+   @media (max-width: 768px) {
+    .img {
+      margin-top: 67px; /* Larger margin when the page is small */
+    }
+  }
+  .parent{
+   position: relative;
+  }
+  .overlay{
+   position: absolute;
+   bottom: -50px;
+   background-color: #E2E2D2;
+  }
+  .background-hero{
+   position: relative;
+  }
+  

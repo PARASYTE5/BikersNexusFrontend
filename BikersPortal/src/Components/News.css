@@ -1,0 +1,55 @@
+
+  
+  .text-center {
+    text-align: center;
+  }
+
+  .news-card-item {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .news-img-top {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 15px;
+    background-color: #f8f9fa;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .btn-primary {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  .card{
+    height: 400px ;
+  }
+  .loading-text {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
